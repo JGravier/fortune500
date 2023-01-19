@@ -21,3 +21,4 @@ write.csv(x = tableausortie %>%
             select(company) %>%
             unique(), file = "fortune500_1955_2019_uniquenames.csv", row.names = FALSE)
 
+write.csv(x = tableausortie, file = "fortune500_1955_2019.csv", row.names = FALSE)
