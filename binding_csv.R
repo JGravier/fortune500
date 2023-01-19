@@ -17,4 +17,7 @@ for (i in 1:length(x = sequence_dates)) {
 
 tableausortie
 
-write.csv(x = tableausortie, file = "fortune500.csv")
+write.csv(x = tableausortie %>%
+            select(company) %>%
+            unique(), file = "fortune500_1955_2019_uniquenames.csv", row.names = FALSE)
+
